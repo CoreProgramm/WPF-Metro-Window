@@ -1,0 +1,29 @@
+﻿
+
+<Controls:MetroWindow x:Class="WPFMeteroWindow.MainWindow"
+                      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                      xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
+                      xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+                      Title="MahApps.Metro.Window" Width="800" Height="600"
+                      GlowBrush="{DynamicResource AccentColorBrush}"
+                      WindowStartupLocation="CenterScreen"  >
+
+    <Controls:MetroWindow.RightWindowCommands>
+        <Controls:WindowCommands>
+            <Button Content="settings" />
+            <Button>
+                <StackPanel Orientation="Horizontal">
+                  
+                    <TextBlock Margin="4 0 0 0" VerticalAlignment="Center" Text="Users" />
+                </StackPanel>
+            </Button>
+        </Controls:WindowCommands>
+    </Controls:MetroWindow.RightWindowCommands>
+
+    <Grid>
+        <Label Margin="200 50 0 0" FontSize="30">This is Mahapps Metro Window Example</Label>
+        <Image Source="/Resources/CoreProgramm.png" Width="100" Height="100"></Image>  <Label Margin="600 100 0 0" FontSize="15">CoreProgramm</Label>
+    </Grid>
+
+</Controls:MetroWindow>
